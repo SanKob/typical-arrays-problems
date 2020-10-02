@@ -5,7 +5,7 @@ exports.min = function min (array) {
   }
   let arr = array;
   let min = array[0];
-  for (let i=0; i <arr.length; i++) {
+  for (let i=1; i <arr.length; i++) {
     if (min > arr[i]) {
       min = arr[i];
     }
@@ -19,7 +19,7 @@ exports.max = function max (array) {
   };
   let arr = array;
   let max = array[0];
-  for (let i=0; i <arr.length; i++) {
+  for (let i=1; i <arr.length; i++) {
     if (max < arr[i]) {
       max = arr[i];
     }
